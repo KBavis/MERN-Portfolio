@@ -1,8 +1,6 @@
-const express = require("express");
-const dotenv = require("dotenv");
+var express = require("express");
+var router = express.Router();
 const mg = require("mailgun-js");
-
-dotenv.config();
 
 const mailgun = () =>
   mg({
@@ -10,18 +8,15 @@ const mailgun = () =>
     domain: process.env.MAILGUN_DOMAIN,
   });
 
-const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-app.post("/api/email", (req, res) => {
+/* GET home page. */
+router.post("/", (req, res) => {
   const { name, email, subject, message } = req.body;
   mailgun()
     .messages()
     .send(
       {
         from: `${email}`,
-        to: `kbavis@albany.edu`,
+        to: `kellenbavis10@gmail.com`,
         subject: `${subject}`,
         html: `<p>${message}</p>`,
       },
@@ -37,7 +32,4 @@ app.post("/api/email", (req, res) => {
     );
 });
 
-const port = process.env.PORT || 4000;
-app.listen(port, () => {
-  console.log(`Serve at http://localhost:${port}`);
-});
+module.exports = router;
