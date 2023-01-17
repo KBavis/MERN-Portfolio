@@ -1,4 +1,4 @@
-import "../App.css";
+import "../styles/App.css";
 import OwlCarousel from "react-owl-carousel";
 import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
 import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css";

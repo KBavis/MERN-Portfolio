@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "../App.css";
+import "../styles/App.css";
+import "../styles/Home.css";
 import Typed from "react-typed";
 import MySidebar from "../components/MySidebar";
 import { saveAs } from "file-saver";

@@ -1,0 +1,89 @@
+.home {
+  height: 100vh;
+  color: #fff;
+  background-image: url("../images/abstract-white-geometric-vector-background_322958-362.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  margin: auto;
+}
+
+.home .home-content {
+  padding-top: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.home .home-content .text-1 {
+  color: black;
+  font-size: 27px;
+  margin-top: 60px;
+}
+
+.home .home-content .text-2 {
+  margin-top: 10px;
+  color: black;
+  font-size: 70px;
+  font-weight: 600;
+  margin-left: -3;
+}
+
+.home .home-content .text-3 {
+  margin-top: 10px;
+  color: black;
+  font-size: 40px;
+  margin: 5px 0;
+  font-weight: 450;
+}
+
+.home .home-content .text-3 .typing {
+  color: #fa2742;
+  font-weight: 600;
+}
+
+/* deals with our hire me link on the home page */
+.home .home-content #hire {
+  display: inline-block;
+  background: #fa2742;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid #fa2742;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.home .home-content .hire-link #hire:hover {
+  color: #fa2742;
+  background: none;
+}
+
+.home .home-content a:hover {
+  color: #fa2742;
+  background: none;
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .home .home-content #hire {
+    padding: 6px 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .home .home-content #hire {
+    font-size: 20px;
+    padding: 8px 25px;
+  }
+}

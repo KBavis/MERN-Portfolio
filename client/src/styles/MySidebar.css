@@ -1,0 +1,36 @@
+/* START SIDEBAR STYLING */
+.home .home-content #sidebar a {
+  display: inline-block;
+  background: white;
+  width: 600px;
+  padding: 15px 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+#sidebar {
+  flex: 1;
+  position: absolute;
+  left: 0;
+}
+.ps-sidebar-container {
+  width: 105px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.home .home-content .menu {
+  background-color: white;
+  box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+  font-size: 20px;
+  padding: 0 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 720px) {
+  #sidebar {
+    display: none;
+  }
+}

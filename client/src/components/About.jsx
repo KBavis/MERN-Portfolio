@@ -1,4 +1,4 @@
-import "../App.css";
+import "../styles/App.css";
 import profilePicture from "../images/profile_pic.jpg";
 
 const About = () => {

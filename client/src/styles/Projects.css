@@ -1,0 +1,256 @@
+.projects .projects-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  padding: 60px;
+}
+
+.projects .projects-content .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+
+.projects .projects-content .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  /* causes for the line to be within the word */
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fa2742;
+  /* causes for the line to be within the word */
+  transform: translateX(-50%);
+}
+
+.projects .projects-content .carousel .card {
+  background: #373833;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+  /* prevents scroll bars from appearing */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: white;
+  height: 450px;
+}
+
+.projects .projects-content .carousel .card img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 25%;
+  border: 3px solid #fa2742;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.projects .projects-content .carousel .card a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+/* changes color of card while hovered */
+.projects .projects-content .carousel .card:hover a {
+  color: #fa2742;
+}
+
+.projects .projects-content .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+.projects .projects-content .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.projects .projects-content .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 20px 0;
+}
+
+.projects .projects-content .carousel .card .box p {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.owl-nav {
+  font-size: 50px;
+  text-align: center;
+}
+
+.owl-nav .owl-prev {
+  margin-right: 200px;
+  position: absolute;
+  left: 40%;
+  color: #fa2742;
+}
+
+.owl-nav .owl-next {
+  margin-left: 200px;
+  position: absolute;
+  right: 40%;
+}
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+  color: #fa2742 !important;
+}
+
+/* deals with the dots of owl carousel */
+.owl-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+.owl-dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 7px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #fa2742 !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 37px;
+  border-radius: 16px;
+}
+/* causes the little dot to be highlighted */
+.owl-dot.active,
+.owl-dot:hover {
+  background: #fa2742 !important;
+}
+
+/* Responsive Styling Start  */
+
+@media (max-width: 1420px) {
+  .projects .projects-content .carousel .card {
+    height: 570px;
+  }
+  .projects .projects-content .carousel .card .box {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects .projects-content .carousel .card {
+    height: 600px;
+  }
+}
+
+@media (max-width: 860px) {
+  .owl-nav .owl-prev {
+    left: 30%;
+  }
+
+  .owl-nav .owl-next {
+    right: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects .projects-content .title {
+    font-size: 33px;
+    margin-bottom: 60px;
+  }
+}
+
+/* had importants */
+@media (max-width: 730px) {
+  .projects .projects-content .carousel .card {
+    height: 680px;
+  }
+}
+
+/* left and right had importants */
+@media (max-width: 600px) {
+  .owl-nav .owl-prev {
+    left: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  .owl-nav .owl-next {
+    right: -0px;
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .projects .projects-content .carousel .card .box .text {
+    font-size: 24px;
+  }
+
+  .projects .projects-content .carousel .card .box p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .projects .projects-content .carousel .card .box {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects .projects-content .carousel .card .box .text {
+    font-size: 22px;
+  }
+
+  .projects .projects-content .carousel .card .box p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 415px) {
+  .projects .projects-content .carousel .card .box .text {
+    font-size: 20px;
+  }
+
+  .projects .projects-content .carousel .card .box p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .projects .projects-content .carousel .card .box img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 350px) {
+  .projects .projects-content .carousel .card .box .text {
+    font-size: 17px;
+  }
+
+  .projects .projects-content .carousel .card .box p {
+    font-size: 14px;
+  }
+
+  .owl-nav .owl-prev {
+    left: -18px;
+  }
+
+  .owl-nav .owl-next {
+    right: -18px;
+  }
+}

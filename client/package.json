@@ -17,10 +17,12 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-owl-carousel": "^2.3.3",
     "react-pro-sidebar": "^1.0.0-alpha.9",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^9.1.1",
+    "react-typed": "^1.2.0",
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4"
   },
