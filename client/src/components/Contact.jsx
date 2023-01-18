@@ -27,7 +27,8 @@ const Contact = () => {
     }
     try {
       setLoading(true);
-      const { data } = await axios.post(`/api/email`, {
+      // This was `/api/email`
+      const { data } = await axios.post(`http://localhost:4000/api/email`, {
         name,
         email,
         subject,
