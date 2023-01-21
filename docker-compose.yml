@@ -15,12 +15,6 @@ services:
       - "27017:27017"
     volumes:
       - data:/data/db
-  watchtower:
-    image: containrrr/watchtower
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - $HOME/.docker/config.json:/config.json
-    command: --interval 30
 volumes:
   data:
     driver: local
