@@ -34,13 +34,13 @@ app.use(function (req, res, next) {
 });
 
 //connect to db
-// mongoose.connect("mongodb://mongo:27017/test", { useNewUrlParser: true });
+mongoose.connect("mongodb://mongo:27017/test", { useNewUrlParser: true });
 
-// var db = mongoose.connection;
-// db.on("error", console.error.bind(console, "CONNECTION ERROR"));
-// db.once("open", function () {
-//   console.log("Connected to db");
-// });
+var db = mongoose.connection;
+db.on("error", console.error.bind(console, "CONNECTION ERROR"));
+db.once("open", function () {
+  console.log("Connected to db");
+});
 
 // error handler
 app.use(function (err, req, res, next) {
