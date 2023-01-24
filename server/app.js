@@ -34,7 +34,8 @@ app.use(function (req, res, next) {
 });
 
 //connect to db
-mongoose.connect("mongodb://mongo:27017/test", { useNewUrlParser: true });
+// mongoose.connect("mongodb://mongo:27017/test", { useNewUrlParser: true });
+mongoose.connect("mongodb://mongo:27017/projects", { useNewUrlParser: true });
 
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "CONNECTION ERROR"));
