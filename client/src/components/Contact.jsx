@@ -30,7 +30,7 @@ const Contact = () => {
       // This was `http://localhost:4000/api/email`
       //`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/api/email`
       // `http://ec2-54-89-169-174.compute-1.amazonaws.com/api/email`
-      const { data } = await axios.post(`54.89.169.174/api/email`, {
+      const { data } = await axios.post(`http://54.89.169.174/api/email`, {
         name,
         email,
         subject,
