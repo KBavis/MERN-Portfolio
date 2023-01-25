@@ -29,15 +29,13 @@ const Contact = () => {
       setLoading(true);
       // This was `http://localhost:4000/api/email`
       //`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/api/email`
-      const { data } = await axios.post(
-        `http://ec2-54-89-169-174.compute-1.amazonaws.com/api/email`,
-        {
-          name,
-          email,
-          subject,
-          message,
-        }
-      );
+      // `http://ec2-54-89-169-174.compute-1.amazonaws.com/api/email`
+      const { data } = await axios.post(`54.89.169.174/api/email`, {
+        name,
+        email,
+        subject,
+        message,
+      });
       setLoading(false);
       toast.success(data.message);
     } catch (err) {
