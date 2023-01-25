@@ -28,7 +28,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - /home/ubuntu/MERN-Portfolio/Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
       - caddy_config:/config
 volumes:
