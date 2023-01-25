@@ -50,9 +50,10 @@ const Projects = () => {
   // orginal link was `http://localhost:4000/projects`
   //`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/projects`
   // `http://ec2-54-89-169-174.compute-1.amazonaws.com/projects`
+  // `http://54.89.169.174/projects`
   useEffect(() => {
     axios
-      .get(`http://54.89.169.174/projects`)
+      .get(`http://code.kellenbavis.xyz/projects`)
       .then((res) => {
         console.log(res);
         setProjects(res.data);
