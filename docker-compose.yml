@@ -1,4 +1,5 @@
 version: "3"
+
 services:
   portfolio_server_baviske:
     # image: docker.io/baviske/portfolio_server_baviske:latest
@@ -8,14 +9,29 @@ services:
       - "4000:4000"
     depends_on:
       - mongo
+    build: ./
     links:
       - mongo
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
   mongo:
     image: mongo:latest
     ports:
       - "27017:27017"
     volumes:
       - data:/data/db
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - /home/ubuntu/MERN-Portfolio/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
 volumes:
+  caddy_data:
+  caddy_config:
   data:
-    driver: local
