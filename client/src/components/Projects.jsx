@@ -47,10 +47,10 @@ const Projects = () => {
   // }, []);
 
   const [projects, setProjects] = useState([]);
-
+  // orginal link was `http://localhost:4000/projects`
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/projects`)
+      .get(`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/projects`)
       .then((res) => {
         console.log(res);
         setProjects(res.data);
