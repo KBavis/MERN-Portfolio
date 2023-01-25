@@ -1,15 +1,16 @@
 .contact {
-  height: 100vh;
+  /* height: 100vh; */
   color: #fff;
   background-image: url("../images/abstract-white-geometric-vector-background_322958-362.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  min-height: 500px;
+  /* min-height: 500px; */
   font-family: "Ubuntu", sans-serif;
   width: 100%;
   margin-top: 0;
+  padding-bottom: 40px;
 }
 
 .contact .contact-content {
