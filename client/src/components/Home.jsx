@@ -25,7 +25,6 @@ const downloadResume = () => {
 const Home = () => {
   return (
     <div className="home" id="home">
-      <Typed></Typed>
       <div className="home-content">
         <h5 className="text-1">Hi, my name is </h5>
         <h1 className="text-2">Kellen Bavis</h1>
