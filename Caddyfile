@@ -1,0 +1,3 @@
+ec2-54-89-169-174.compute-1.amazonaws.com {
+   reverse_proxy portfolio_server_baviske-1:4000; 
+}

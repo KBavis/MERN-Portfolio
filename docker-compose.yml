@@ -1,4 +1,6 @@
 version: "3"
+networks:
+  caddy:
 services:
   portfolio_server_baviske:
     # image: docker.io/baviske/portfolio_server_baviske:latest
@@ -10,12 +12,32 @@ services:
       - mongo
     links:
       - mongo
+    networks:
+      - caddy
   mongo:
     image: mongo:latest
     ports:
       - "27017:27017"
     volumes:
       - data:/data/db
+    networks:
+      - caddy
+  caddy:
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/site:/srv
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - caddy
 volumes:
+  caddy_data:
+  caddy_config:
   data:
     driver: local
