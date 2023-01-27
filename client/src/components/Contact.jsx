@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -17,6 +18,8 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState("");
+
+  const { reset } = useForm();
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -28,8 +31,11 @@ const Contact = () => {
     try {
       setLoading(true);
       // This was `http://localhost:4000/api/email`
+      //`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/api/email`
+      // `http://ec2-54-89-169-174.compute-1.amazonaws.com/api/email`
+      //`http://54.89.169.174/api/email`
       const { data } = await axios.post(
-        `http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/api/email`,
+        `http://code.kellenbavis.xyz/api/email`,
         {
           name,
           email,

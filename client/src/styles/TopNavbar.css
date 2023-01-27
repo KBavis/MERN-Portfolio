@@ -104,4 +104,7 @@
   #title-resume {
     display: none;
   }
+  .navbar-brand {
+    margin-left: 20px;
+  }
 }

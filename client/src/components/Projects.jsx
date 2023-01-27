@@ -48,9 +48,12 @@ const Projects = () => {
 
   const [projects, setProjects] = useState([]);
   // orginal link was `http://localhost:4000/projects`
+  //`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/projects`
+  // `http://ec2-54-89-169-174.compute-1.amazonaws.com/projects`
+  // `http://54.89.169.174/projects`
   useEffect(() => {
     axios
-      .get(`http://ec2-54-89-169-174.compute-1.amazonaws.com:4000/projects`)
+      .get(`http://code.kellenbavis.xyz/projects`)
       .then((res) => {
         console.log(res);
         setProjects(res.data);
@@ -64,6 +67,11 @@ const Projects = () => {
     <div className="projects" id="projects">
       <div className="projects-content">
         <h2 className="title">Projects</h2>
+        <div className="sub-title">
+          Below are a list of some of the projects that I have completed over
+          the years. If interested, click the project name to view the source
+          code!
+        </div>
         {projects.length && (
           <OwlCarousel
             className="carousel owl-carousel"
