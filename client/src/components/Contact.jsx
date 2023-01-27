@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -17,6 +18,8 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState("");
+
+  const { reset } = useForm();
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -42,6 +45,7 @@ const Contact = () => {
       );
       setLoading(false);
       toast.success(data.message);
+      reset();
     } catch (err) {
       setLoading(false);
       toast.error(
