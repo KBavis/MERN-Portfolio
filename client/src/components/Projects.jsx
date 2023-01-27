@@ -67,6 +67,11 @@ const Projects = () => {
     <div className="projects" id="projects">
       <div className="projects-content">
         <h2 className="title">Projects</h2>
+        <div className="sub-title">
+          Below are a list of some of the projects that I have completed over
+          the years. If interested, click the project name to view the source
+          code!
+        </div>
         {projects.length && (
           <OwlCarousel
             className="carousel owl-carousel"

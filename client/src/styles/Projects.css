@@ -34,6 +34,14 @@
   transform: translateX(-50%);
 }
 
+.projects .projects-content .sub-title {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 70px;
+}
+
 .projects .projects-content .carousel .card {
   background: #373833;
   border-radius: 10px;
