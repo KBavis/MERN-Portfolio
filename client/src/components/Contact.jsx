@@ -39,6 +39,8 @@ const Contact = () => {
       );
       setLoading(false);
       toast.success(data.message);
+      var form = document.getElementById("myForm");
+      form.reset();
     } catch (err) {
       setLoading(false);
       toast.error(
@@ -59,7 +61,7 @@ const Contact = () => {
           message back as fast as I can!
         </div>
         <div className="contact-form">
-          <form onSubmit={submitHandler}>
+          <form onSubmit={submitHandler} id="myForm">
             <div className="fields">
               <div className="field name">
                 <div className="field-header">
