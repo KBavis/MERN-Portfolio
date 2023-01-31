@@ -35,7 +35,7 @@ const Contact = () => {
       // `http://ec2-54-89-169-174.compute-1.amazonaws.com/api/email`
       //`http://54.89.169.174/api/email`
       const { data } = await axios.post(
-        `http://code.kellenbavis.xyz/api/email`,
+        `https://code.kellenbavis.xyz/api/email`,
         {
           name,
           email,

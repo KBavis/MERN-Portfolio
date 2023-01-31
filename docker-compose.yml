@@ -26,7 +26,7 @@ services:
     container_name: caddy
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "443:443"
     volumes:
       - /home/ubuntu/MERN-Portfolio/Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
