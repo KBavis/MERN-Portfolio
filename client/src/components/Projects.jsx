@@ -53,7 +53,7 @@ const Projects = () => {
   // `http://54.89.169.174/projects`
   useEffect(() => {
     axios
-      .get(`http://code.kellenbavis.xyz/projects`)
+      .get(`https://code.kellenbavis.xyz/projects`)
       .then((res) => {
         console.log(res);
         setProjects(res.data);
