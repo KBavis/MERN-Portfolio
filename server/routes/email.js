@@ -17,6 +17,7 @@ router.post("/", (req, res) => {
       {
         from: `portfolio-contact-form@kellenbavis.world`,
         to: `kellenbavis10@gmail.com`,
+        cc: `kbavis@albany.edu`,
         subject: `subject: ${subject} | email: ${email} | name: ${name}`,
         html: `<p>${message}</p>`,
       },
