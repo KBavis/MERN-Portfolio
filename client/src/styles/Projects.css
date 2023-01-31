@@ -51,7 +51,8 @@
   overflow: hidden;
   transition: all 0.3s ease;
   color: white;
-  height: 450px;
+  /* THIS WAS 450  */
+  height: 470px;
 }
 
 .projects .projects-content .carousel .card img {
