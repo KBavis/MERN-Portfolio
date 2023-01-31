@@ -15,9 +15,9 @@ router.post("/", (req, res) => {
     .messages()
     .send(
       {
-        from: `${email}`,
+        from: `portfolio-contact-form@kellenbavis.world`,
         to: `kellenbavis10@gmail.com`,
-        subject: `${subject}`,
+        subject: `${subject}  ${email}`,
         html: `<p>${message}</p>`,
       },
       (error, body) => {
