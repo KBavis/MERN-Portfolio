@@ -51,7 +51,8 @@
   overflow: hidden;
   transition: all 0.3s ease;
   color: white;
-  height: 450px;
+  /* THIS WAS 450  */
+  height: 470px;
 }
 
 .projects .projects-content .carousel .card img {
@@ -82,6 +83,8 @@
   justify-content: center;
   transition: all 0.3s ease;
   margin-bottom: 20px;
+  /* this was added  */
+  padding-bottom: 20px;
 }
 .projects .projects-content .carousel .card:hover .box {
   transform: scale(1.05);
@@ -149,7 +152,7 @@
 
 @media (max-width: 1420px) {
   .projects .projects-content .carousel .card {
-    height: 570px;
+    height: 640px;
   }
   .projects .projects-content .carousel .card .box {
     padding-bottom: 40px;
@@ -158,7 +161,7 @@
 
 @media (max-width: 1100px) {
   .projects .projects-content .carousel .card {
-    height: 600px;
+    height: 620px;
   }
 }
 
@@ -182,7 +185,7 @@
 /* had importants */
 @media (max-width: 730px) {
   .projects .projects-content .carousel .card {
-    height: 680px;
+    height: 700px;
   }
 }
 
