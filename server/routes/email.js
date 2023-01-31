@@ -15,7 +15,7 @@ router.post("/", (req, res) => {
     .messages()
     .send(
       {
-        from: `portfolio-contact-form@sandboxac0406dc40ac4eb48ba2f25be72252bc.mailgun.org`,
+        from: `portfolio-contact-form@kellenbavis.world`,
         to: `kellenbavis10@gmail.com`,
         subject: `subject: ${subject} | email: ${email} | name: ${name}`,
         html: `<p>${message}</p>`,
