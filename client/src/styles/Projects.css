@@ -82,6 +82,8 @@
   justify-content: center;
   transition: all 0.3s ease;
   margin-bottom: 20px;
+  /* this was added  */
+  padding-bottom: 20px;
 }
 .projects .projects-content .carousel .card:hover .box {
   transform: scale(1.05);

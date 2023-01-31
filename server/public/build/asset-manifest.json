@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e882e632.css",
+    "main.css": "/static/css/main.112bd2a6.css",
     "main.js": "/static/js/main.2062522a.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/html_logo.ico": "/static/media/html_logo.4c5d6e0905f064e16ca4.ico",
@@ -13,12 +13,12 @@
     "static/media/discord.png": "/static/media/discord.58b6b00e6f4896a3771c.png",
     "static/media/tensorflow-logo.webp": "/static/media/tensorflow-logo.a02ed62486bd34065406.webp",
     "index.html": "/index.html",
-    "main.e882e632.css.map": "/static/css/main.e882e632.css.map",
+    "main.112bd2a6.css.map": "/static/css/main.112bd2a6.css.map",
     "main.2062522a.js.map": "/static/js/main.2062522a.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e882e632.css",
+    "static/css/main.112bd2a6.css",
     "static/js/main.2062522a.js"
   ]
 }
