@@ -2,7 +2,9 @@ const Card = ({ project }) => {
   return (
     <div class="card">
       <div class="box">
-        <img src={project.image} alt="" id="kbavis_logo"></img>
+        <a href={project.link} target="_blank">
+          <img src={project.image} alt="" id="kbavis_logo"></img>
+        </a>
         <div class="text">
           <a href={project.link} target="_blank">
             {project.name}

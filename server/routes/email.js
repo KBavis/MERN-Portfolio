@@ -15,9 +15,10 @@ router.post("/", (req, res) => {
     .messages()
     .send(
       {
-        from: `${email}`,
+        from: `portfolio-contact-form@kellenbavis.world`,
         to: `kellenbavis10@gmail.com`,
-        subject: `${subject}`,
+        cc: `kbavis@albany.edu`,
+        subject: `subject: ${subject} | email: ${email} | name: ${name}`,
         html: `<p>${message}</p>`,
       },
       (error, body) => {

@@ -53,7 +53,7 @@ const Projects = () => {
   // `http://54.89.169.174/projects`
   useEffect(() => {
     axios
-      .get(`http://code.kellenbavis.xyz/projects`)
+      .get(`https://code.kellenbavis.xyz/projects`)
       .then((res) => {
         console.log(res);
         setProjects(res.data);
@@ -69,8 +69,8 @@ const Projects = () => {
         <h2 className="title">Projects</h2>
         <div className="sub-title">
           Below are a list of some of the projects that I have completed over
-          the years. If interested, click the project name to view the source
-          code!
+          the years. If interested, click the project name or image to view the
+          source code!
         </div>
         {projects.length && (
           <OwlCarousel

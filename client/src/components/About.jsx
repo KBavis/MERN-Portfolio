@@ -39,11 +39,11 @@ const About = () => {
               posesses the knowledge needed to develop web applications such as
               this one! Backend has always been my expertise, but my desire to
               <span> learn</span> and <span>create</span> has caused me to begin
-              learning the necessary technologies needed to work on the
-              Front-End as well. I'm a highly ambitious and performance-driven
-              individual who will take the necessary steps needed to complete a
-              given workload within strict timelines. My <span> skills</span>{" "}
-              include the following:
+              learning the necessary technologies needed to work on the Frontend
+              as well. I'm a highly ambitious and performance-driven individual
+              who will take the necessary steps needed to complete a given
+              workload within strict timelines. My <span> skills</span> include
+              the following:
             </p>
             <p className="my-skills">
               {skills &&
